@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KimByte - Kimbab Enak & Bergizi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pixel-decoration"></div>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg width="55" height="55" viewBox="0 0 55 55">
+                        <circle cx="27.5" cy="27.5" r="22" fill="#a8d5a8"/>
+                        <rect x="17" y="22" width="22" height="4" fill="#ffb6c6" rx="2"/>
+                        <rect x="17" y="27" width="22" height="4" fill="#ffe680" rx="2"/>
+                        <rect x="17" y="32" width="22" height="4" fill="#ffb366" rx="2"/>
+                        <path d="M 22 17 Q 27.5 12 33 17" stroke="white" stroke-width="3" fill="none"/>
+                        <circle cx="24" cy="18" r="2" fill="white"/>
+                        <circle cx="31" cy="18" r="2" fill="white"/>
+                        <path d="M 24 20 Q 27.5 22 31 20" stroke="#ff9bb0" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
+                <h1>KimByte</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2>🍱 WELCOME TO KIMBYTE! 🍱</h2>
+            <p>Fresh • Tasty • Indonesian Style Kimbab!</p>
+            
+            <div class="carousel-container">
+                <div class="carousel-wrapper" id="carouselWrapper">
+                    <div class="carousel-slide">
+                        <div class="menu-icon">🍙</div>
+                        <h3>Kimbab Original</h3>
+                        <p>Kimbab klasik dengan sayuran segar, telur, dan wortel yang digulung sempurna</p>
+                        <div class="price">Rp 15.000</div>
+                        <a href="https://wa.me/6281234567890?text=Halo%20KimByte!%20Saya%20ingin%20memesan%20Kimbab%20Original" class="order-btn">PESAN SEKARANG</a>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <div class="menu-icon">🍗</div>
+                        <h3>Kimbab Ayam Suwir</h3>
+                        <p>Kimbab dengan isian ayam suwir pedas berbumbu khas dan saus spesial yang menggugah selera</p>
+                        <div class="price">Rp 18.000</div>
+                        <a href="https://wa.me/6281234567890?text=Halo%20KimByte!%20Saya%20ingin%20memesan%20Kimbab%20Ayam%20Suwir" class="order-btn">PESAN SEKARANG</a>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <div class="menu-icon">🥩</div>
+                        <h3>Kimbab Rendang</h3>
+                        <p>Fusion kimbab dengan rendang autentik, perpaduan sempurna Korea dan Nusantara</p>
+                        <div class="price">Rp 20.000</div>
+                        <a href="https://wa.me/6281234567890?text=Halo%20KimByte!%20Saya%20ingin%20memesan%20Kimbab%20Rendang" class="order-btn">PESAN SEKARANG</a>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <div class="menu-icon">🐟</div>
+                        <h3>Kimbab Ikan Tongkol</h3>
+                        <p>Kimbab dengan ikan tongkol segar pilihan, kaya protein dan omega-3</p>
+                        <div class="price">Rp 17.000</div>
+                        <a href="https://wa.me/6281234567890?text=Halo%20KimByte!%20Saya%20ingin%20memesan%20Kimbab%20Ikan%20Tongkol" class="order-btn">PESAN SEKARANG</a>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="menu-icon">🌶️</div>
+                        <h3>Kimbab Ayam Geprek</h3>
+                        <p>Sensasi pedas nampol ayam geprek berpadu dengan nasi pulen hangat dalam balutan nori. Berani coba?</p>
+                        <div class="price">Rp 19.000</div>
+                        <a href="https://wa.me/6281234567890?text=Halo%20KimByte!%20Saya%20ingin%20memesan%20Kimbab%20Ayam%20Geprek" class="order-btn">PESAN SEKARANG</a>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="menu-icon">🍱</div>
+                        <h3>Kimbab Ayam Teriyaki</h3>
+                        <p>Perpaduan manis gurih saus teriyaki dengan ayam juicy, favorit semua umur!</p>
+                        <div class="price">Rp 19.000</div>
+                        <a href="https://wa.me/6281234567890?text=Halo%20KimByte!%20Saya%20ingin%20memesan%20Kimbab%20Ayam%20Teriyaki" class="order-btn">PESAN SEKARANG</a>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-btn" onclick="prevSlide()">◄ PREV</button>
+                    <button class="carousel-btn" onclick="nextSlide()">NEXT ►</button>
+                </div>
+                
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                    <span class="dot" onclick="goToSlide(3)"></span>
+                    <span class="dot" onclick="goToSlide(4)"></span>
+                    <span class="dot" onclick="goToSlide(5)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="menu">
+            <h2 class="section-title">== MENU LENGKAP ==</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-icon">🍙</div>
+                    <h3>Kimbab Original</h3>
+                    <p class="description">Kimbab klasik dengan sayuran segar, telur, dan wortel yang digulung sempurna dalam nori istimewa</p>
+                    <div class="price">Rp 15.000</div>
+                    <a href="https://wa.me/6281378951264?text=Halo%20KimByte!%20Saya%20ingin%20memesan%20Kimbab%20Original" class="order-btn">PESAN</a>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-icon">🍗</div>
+                    <h3>Kimbab Ayam Suwir</h3>
+                    <p class="description">Kimbab dengan isian ayam suwir berbumbu khas, sayuran segar dan saus spesial yang menggugah selera</p>
+                    <div class="price">Rp 18.000</div>
+                    <a href="https://wa.me/6281378951264?text=Halo%20KimByte!%20Saya%20ingin%20memesan%20Kimbab%20Ayam%20Suwir" class="order-btn">PESAN</a>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-icon">🥩</div>
+                    <h3>Kimbab Rendang</h3>
+                    <p class="description">Fusion kimbab dengan rendang autentik Indonesia, perpaduan sempurna cita rasa Korea dan Nusantara</p>
+                    <div class="price">Rp 20.000</div>
+                    <a href="https://wa.me/6281378951264?text=Halo%20KimByte!%20Saya%20ingin%20memesan%20Kimbab%20Rendang" class="order-btn">PESAN</a>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-icon">🐟</div>
+                    <h3>Kimbab Ikan Tongkol</h3>
+                    <p class="description">Kimbab dengan ikan tongkol segar pilihan, kaya protein dan omega-3 untuk kesehatan optimal</p>
+                    <div class="price">Rp 17.000</div>
+                    <a href="https://wa.me/6281378951264?text=Halo%20KimByte!%20Saya%20ingin%20memesan%20Kimbab%20Ikan%20Tongkol" class="order-btn">PESAN</a>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-icon">🌶️</div>
+                    <h3>Kimbab Ayam Geprek</h3>
+                    <p class="description">Fusion ekstrem! Ayam goreng crispy yang digeprek dengan sambal bawang pedas, digulung rapi dengan nasi hangat dan nori.</p>
+                    <div class="price">Rp 19.000</div>
+                    <a href="https://wa.me/6281378951264?text=Halo%20KimByte!%20Saya%20ingin%20memesan%20Kimbab%20Ayam%20Geprek" class="order-btn">PESAN</a>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-icon">🍱</div>
+                    <h3>Kimbab Ayam Teriyaki</h3>
+                    <p class="description">Cita rasa Jepang dalam gulungan kimbab. Ayam fillet dimasak dengan saus teriyaki manis gurih yang lezat.</p>
+                    <div class="price">Rp 19.000</div>
+                    <a href="https://wa.me/6281378951264?text=Halo%20KimByte!%20Saya%20ingin%20memesan%20Kimbab%20Ayam%20Teriyaki" class="order-btn">PESAN</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>== ABOUT US ==</h2>
+            <p>
+                KimByte adalah brand kimbab lokal yang menghadirkan cita rasa Korea dengan sentuhan Indonesia. 
+                Kami berkomitmen untuk menyajikan kimbab berkualitas dengan bahan-bahan segar dan higienis.
+            </p>
+            <p>
+                Setiap kimbab kami dibuat dengan penuh cinta dan perhatian untuk memberikan pengalaman kuliner 
+                yang tak terlupakan. Dari resep original hingga fusion unik, kami punya semuanya!
+            </p>
+            <p> Specially Made By: Nayla, Alya, Wina, Kesya, Dinda</p>
+            <p>
+                💚 FRESH • HEALTHY • DELICIOUS 💖
+            </p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>== CONTACT ==</h2>
+            <div class="contact-info">
+                <p>📍 Indralaya, Sumatera Selatan</p>
+                <p>📱 +62 813-7895-1264</p>
+                <p>⏰ 09:00 - 21:00 WIB</p>
+            </div>
+            <a href="https://wa.me/6281378951264?text=Halo%20KimByte!%20Saya%20ingin%20bertanya%20tentang%20menu" class="whatsapp-btn">
+                💬 CHAT WA
+            </a>
+        </section>
+    </div>
+
+    <div class="pixel-decoration"></div>
+    
+    <footer>
+        <p>&copy; 2025 KIMBYTE</p>
+        <p>MADE WITH 💚 & 💖</p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.dot');
+        const wrapper = document.getElementById('carouselWrapper');
+
+        function updateCarousel() {
+            wrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+
+        // Auto-advance carousel every 5 seconds
+        setInterval(nextSlide, 5000);
+    </script>
+</body>
+</html>
